@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  min-width: 100vw; 
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -23,11 +24,51 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw; 
+  min-height: 100vh;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw; 
+  min-height: 100vh;
+}
+
+.content {
+  text-align: center;
+  color: white;
+  z-index: 99;
+}
+
+.content span {
+  margin: 20% 20% 20% 20%;
+  font-family: 'Helvetica';
+  font-size: xx-large;
+}
+
+span.active {
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
 }
